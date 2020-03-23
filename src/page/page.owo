@@ -62,8 +62,12 @@
   .w1000.prevent
     plug(_name="title" _text="防返贫" _src="./src/module/title.owo")
     plug(_name="doubleRowList" _text="扶贫日志" _src="./src/module/doubleRowList.owo")
-  plug.w1000(_name="title" _text="图说扶贫" _src="./src/module/title.owo")
-  plug.w1000(_name="title" _text="我要留言" _src="./src/module/title.owo")
+  .w1000.picture
+    plug(_name="title" _text="图说扶贫" _src="./src/module/title.owo")
+    plug(_name="high1" _src="https://template.owo.ink/2ec182897c13d555.owo")
+  .w1000.leaving
+    plug(_name="title" _text="我要留言" _src="./src/module/title.owo")
+    iframe.leaving-window#leavingWindow(src="http://leaders.people.com.cn/GB/178291/218130/431995/index.html" o-load="hideBlock")
   .w1000.direct
     plug(_name="title" _text="对口扶贫" _src="./src/module/title.owo")
     plug(_name="doubleRowList" _text="扶贫日志" _src="./src/module/doubleRowList.owo")
@@ -76,9 +80,19 @@
 </template>
 
 <script>
+  // $('#leavingWindow').load(function () {
+  //   var cssLink = document.createElement("link");
+  //   cssLink.href = "main.css";
+  //   cssLink.rel = "stylesheet";
+  //   cssLink.type = "text/css";
+  //   frames['leavingWindow'].contentWindow.document.body.appendChild(cssLink);
+  // })
   module.exports = {
     created: function () {
 
+    },
+    hideBlock: function (ele) {
+      // $(window.frames[0].document).find('body').css({'padding':'0','margin':'0'});
     }
   }
 </script>
@@ -185,5 +199,14 @@
 
 .box {
   margin-bottom: 20px;
+}
+.leaving-window {
+  width: 1000px;
+  height: 580px;
+  overflow: hidden;
+  border: none;
+  .topbg {
+    display: none;
+  }
 }
 </style>
