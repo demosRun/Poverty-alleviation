@@ -1,0 +1,89 @@
+<template lang="pug">
+.swiper-container.swiper-HGypSGwO.clear
+  .swiper-wrapper
+    .swiper-slide(:for="9")
+      img.left(src="http://www.people.com.cn/NMediaFile/2020/0323/MAIN202003230914589547657687815.jpg")
+      .right
+        h2 比樱花更美的是武汉人感恩的心
+        h3 时间：3月16日  地点：武汉市人民医院
+        p 如何准确理解把握习总书记重要讲话的精神内涵？如何使主题教育活动落实更有实效？
+          a(href="#") 【详情】
+  .pagination
+</template>
+
+<script>
+  module.exports = {
+    data: {
+      swiper: null
+    },
+    created: function () {
+      // 轮播图展示区域swiper
+      this.data.swiper = new Swiper(this.$el, {
+        pagination: this.$el.getElementsByClassName('pagination')[0],
+        slidesPerView: 2,
+        slidesPerGroup : 2,
+        slidesPerColumn: 2
+      })
+    }
+  }
+</script>
+
+
+<style lang="less">
+.swiper-HGypSGwO {
+  height: 330px;
+  padding-bottom: 20px;
+  .swiper-slide {
+    height: 50%;
+    .left {
+      width: 140px;
+      height: 140px;
+      overflow: hidden;
+      border-radius: 70px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      z-index: 2;
+    }
+    .right {
+      border: 2px solid #dcdcdc;
+      width: 63%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      height: 60%;
+      margin-right: 5%;
+      padding-left: 20%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      h2, h3 {
+        font-size: 16px;
+        line-height: 1.7;
+      }
+      p {
+        line-height: 1.6;
+        height: 44px;
+        font-size: 14px;
+        overflow: hidden;
+      }
+    }
+  }
+  .swiper-pagination-bullet {
+    width: 60px;
+    height: 5px;
+    border-radius: 0;
+    opacity: 1;
+    background-color: #dcdcdc;
+  }
+  .pagination  {
+    text-align: center;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #fd8865;
+  }
+}
+</style>

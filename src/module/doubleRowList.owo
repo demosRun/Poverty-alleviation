@@ -1,0 +1,16 @@
+<template lang="pug">
+.double-row-list.clear
+  a(:for="12") 中央“不忘初心、牢记使命”主题教育领导小组印发《通知》
+</template>
+
+
+<style lang="less">
+p, a {
+  color: #454545;
+  display: block;
+  float: left;
+  width: 50%;
+  line-height: 2;
+  font-size: 16px;
+}
+</style>

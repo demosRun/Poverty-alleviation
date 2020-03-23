@@ -5,17 +5,72 @@
   //- 主图
   .main-image
     img(src="@|main.jpg|")
-  plug.w1000(_name="title" _text="战贫困" _src="./src/module/title.owo")
-  plug.w1000(_name="title" _text="特别策划" _src="./src/module/title.owo")
-  plug.w1000(_name="title" _text="视频集锦" _src="./src/module/title.owo")
-  plug.w1000(_name="title" _text="我的脱贫故事" _src="./src/module/title.owo")
-  plug.w1000(_name="title" _text="扶贫日志" _src="./src/module/title.owo")
-  plug.w1000(_name="title" _text="扶贫带头人" _src="./src/module/title.owo")
-  plug.w1000(_name="title" _text="防返贫" _src="./src/module/title.owo")
+  .w1000.battle
+    plug(_name="title" _text="战贫困" _src="./src/module/title.owo")
+    h2 “习近平:让青春在党和人民最需要的地方绽放绚丽之花
+    .box.box-1.clear
+      plug.fl.left(_name="44V6SpMv" _src="https://template.owo.ink/46cc2c7087c8f393.owo")
+      .news-list.fl.right
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+  .w1000.plan
+    plug(_name="title" _text="特别策划" _src="./src/module/title.owo")
+    .box.box-2.clear
+      plug.fl.left(_name="44V6SpMv" _src="https://template.owo.ink/46cc2c7087c8f393.owo")
+      .info-card.fl.right
+        h2 北京
+        h3 习近平:让青春在党和人民最需要的地方绽放绚丽之花
+        p &emsp;&emsp;70年披荆斩棘，70年风雨兼程。70年来，在党的正确领导下，在中国人民及海内外华人同胞的共同努力下  70年披荆斩棘，70年风雨兼程。70年来，在党的正确领导下，在中国人民及海内外华人同胞的共同努力下  70年披荆斩棘，70年风雨兼程。70年来，在党的正确领导下
+        .more-button 进入北京篇
+  .w1000.video
+    plug(_name="title" _text="视频集锦" _src="./src/module/title.owo")
+    plug(_name="switchShow" _src="https://template.owo.ink/4040011ce9b65241.owo")
+  .w1000.story
+    plug(_name="title" _text="我的脱贫故事" _src="./src/module/title.owo")
+    .box.box-3.clear
+      plug.fl.left(_name="swiperBox" _src="https://template.owo.ink/cf50e435d5d618e9.owo")
+      .news-list.fl.right
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+        a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
+  //- 扶贫日记
+  .w1000.diary
+    plug(_name="title" _text="扶贫日志" _src="./src/module/title.owo")
+    plug(_name="swiperCard1" _text="扶贫日志" _src="./src/module/swiperCard1.owo")
+  .w1000.leader
+    plug(_name="title" _text="扶贫带头人" _src="./src/module/title.owo")
+    plug(_name="swiperCard2" _text="扶贫日志" _src="./src/module/swiperCard2.owo")
+  .w1000.prevent
+    plug(_name="title" _text="防返贫" _src="./src/module/title.owo")
+    plug(_name="doubleRowList" _text="扶贫日志" _src="./src/module/doubleRowList.owo")
   plug.w1000(_name="title" _text="图说扶贫" _src="./src/module/title.owo")
   plug.w1000(_name="title" _text="我要留言" _src="./src/module/title.owo")
-  plug.w1000(_name="title" _text="对口扶贫" _src="./src/module/title.owo")
-  plug.w1000(_name="title" _text="精彩专题" _src="./src/module/title.owo")
+  .w1000.direct
+    plug(_name="title" _text="对口扶贫" _src="./src/module/title.owo")
+    plug(_name="doubleRowList" _text="扶贫日志" _src="./src/module/doubleRowList.owo")
+  
+  .w1000.album
+    plug(_name="title" _text="精彩专题" _src="./src/module/title.owo")
+    plug(_name="switchShow" _src="https://template.owo.ink/4040011ce9b65241.owo")
   //- 版权信息
   plug(_name="copyright" _src="https://template.owo.ink/060579f0b4f1bcaa.owo")
 </template>
@@ -33,5 +88,102 @@
 .main-image img {
   width: 100%;
   display: block;
+}
+.battle {
+  h2 {
+    color: #073a93;
+    font-size: 35px;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    line-height: 50px;
+    margin-bottom: 35px;
+  }
+}
+.box {
+  position: relative;
+}
+.box-1, .box-2 {
+  .right {
+    width: 340px;
+    height: 400px;
+    overflow: hidden;
+    padding-left: 20px;
+  }
+}
+
+.box-1 .news-list {
+  a, p {
+    height: 36px;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 36px;
+    display: block;
+    color: #333;
+  }
+  a:hover {
+    color: #e60012;
+    text-decoration: none;
+  }
+}
+.box-2 .info-card {
+  h2 {
+    color: #fa7354;
+    font-size: 24px;
+    margin-bottom: 16px;
+    margin-top: -5px;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #323232;
+    height: 200px;
+    overflow: auto;
+  }
+  .more-button {
+    background-color: #fa7354;
+    color: white;
+    position: absolute;
+    height: 40px;
+    line-height: 40px;
+    width: 125px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 16px;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+  }
+}
+.box-3 {
+  .right {
+    width: 340px;
+    height: 325px;
+    overflow: hidden;
+    padding-left: 50px;
+    margin: 10px 0;
+    padding-right: 60px;
+  }
+  a, p {
+    height: 40px;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 40px;
+    display: block;
+    color: #333;
+    border-bottom: 1px solid #dcdcdc;
+  }
+  a:hover {
+    color: #e60012;
+    text-decoration: none;
+  }
+}
+
+.box {
+  margin-bottom: 20px;
 }
 </style>

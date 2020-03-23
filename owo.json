@@ -78,8 +78,8 @@
 			"src": "http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"
 		},
 		{
-			"name": "swiper.min.2.0",
-			"src": "http://tools.people.com.cn/libs/swiper/2.0/idangerous.swiper.min.js"
+			"name": "swiper-3.4.2.min",
+			"src": "./src/resource/swiper-3.4.2.min.js"
 		},
 		{
 			"name": "main",
@@ -93,8 +93,8 @@
 			"src": "./src/main.css"
 		},
 		{
-			"name": "swiper.2.0",
-			"src": "http://tools.people.com.cn/libs/swiper/2.0/idangerous.swiper.css"
+			"name": "swiper-3.4.2.min",
+			"src": "./src/resource/swiper-3.4.2.min.css"
 		}
 	],
 	"pageList": [

@@ -1,0 +1,73 @@
+<template lang="pug">
+.swiper-container.swiper-nQRKuKHI.clear
+  .swiper-wrapper
+    .swiper-slide(:for="9")
+      .show
+        img(src="@|show-1.jpg|")
+      .info
+        .people
+          h2 董丽霞
+          h3 黑龙江省人大代表
+        p 如何准确理解把握习总书记重要讲话的精神内涵？如何使主题教育活动落实更有实效？
+  <div class="prev" o-tap="prev"></div> 
+  <div class="next" o-tap="next"></div> 
+</template>
+
+<script>
+  module.exports = {
+    data: {
+      swiper: null
+    },
+    created: function () {
+      // 轮播图展示区域swiper
+      this.data.swiper = new Swiper(this.$el, {
+        mode: 'horizontal',
+        // autoplay: 5000,
+        autoplayDisableOnInteraction: false,
+        loop: true,
+        spaceBetween: 25,
+        slidesPerView: 3,
+        slidesPerGroup : 3,
+        mousewheelControl: false,
+      })
+    }
+  }
+</script>
+
+
+<style lang="less">
+.swiper-nQRKuKHI {
+  width: 100%;
+  height: 410px;
+  padding-bottom: 20px;
+  .swiper-slide {
+    background-color: #ebf2fe;
+    .show {
+      width: 100%;
+      height: 300px;
+      img, a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .info {
+    padding: 16px 10px;
+  }
+  .people {
+    line-height: 30px;
+    h2, h3 {
+      display: inline;
+    }
+    h2 {
+      margin-right: 10px;
+    }
+  }
+  p {
+    line-height: 1.7;
+    height: 46px;
+    overflow: hidden;
+  }
+}
+</style>

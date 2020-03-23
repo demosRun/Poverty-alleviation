@@ -1,0 +1,113 @@
+<template>
+  <div class="LbWMGSGs">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide card" :for="data.swiperList">
+          <div class="swiper-item" >
+            <a href="#">
+              <img src="{value.image}"/>
+              <div class="image-title">{value.title}</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="http://www.people.com.cn/img/2016people/images/left_b.png" class="swiper-button swiper-button-next" o-tap="swiperNext"/>
+    <img src="http://www.people.com.cn/img/2016people/images/left_b.png" class="swiper-button swiper-button-prev" o-tap="swiperPrev"/>
+  </div>
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      const cont = this.$el.getElementsByClassName('swiper-container')[0]
+      this.data.swiper = new Swiper(cont, {"loop":true,"autoplay":3000,"slidesPerView":4})
+    },
+    data: {
+      swiper: null,
+      swiperList: [{"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907120738032280874.jpg","title":"中国冰雕亮相莫斯科"},{"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907113668180928777.jpg","title":"云南星云湖开湖捕鱼忙"},{"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907113668180928777.jpg","title":"探访新中国首个名人纪念馆上海鲁迅纪念馆"},{"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907110150545385955.jpg","title":"呼伦贝尔：燃情雪橇激情冬日"},{"image":"http://www.people.com.cn/NMediaFile/2019/1225/MAIN201912250710121236217686613.jpg","title":"连云港：“海上菜园”收割忙"}]
+    },
+    swiperNext: function () {
+      // console.log('swiperNext')
+      this.data.swiper.swipeNext ? this.data.swiper.swipeNext() : this.data.swiper.slideNext()
+    },
+    swiperPrev: function () {
+      // console.log('swiperPrev')
+      this.data.swiper.swipePrev ? this.data.swiper.swipePrev(): this.data.swiper.slidePrev()
+    }
+  }
+</script>
+
+<style lang="less">
+  .LbWMGSGs {
+    height: 180px;
+    width: 1000px;
+    position: relative;
+    .swiper-container {
+      height: 190px;
+      width: 960px;
+      position: relative;
+      .swiper-item {
+        width: 240px;
+        height: 170px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+    .swiper-wrapper {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .LbWMGSGs {
+    position: relative;
+    .swiper-button {
+      height: 30px;
+      position: absolute;
+      top: 0;
+      bottom: 30px;
+      margin: auto;
+      cursor: pointer;
+      z-index: 999;
+      background-image: none;
+    }
+    .swiper-button-next {
+      right: 0;
+      transform: rotate(180deg);
+    }
+    .swiper-button-prev {
+      left: 0;
+    }
+  }
+  a {
+    color: black;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    img {
+      width: 190px;
+      height: 140px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  .image-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    width: 190px;
+    margin: 0 auto;
+  }
+  .swiper-slide {
+    position: relative;
+  }
+</style>
