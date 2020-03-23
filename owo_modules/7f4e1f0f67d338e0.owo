@@ -1,0 +1,44 @@
+<template>
+  <div class="nav clearfix">
+    <a href="" target="_blank">战贫困</a>
+    <a href="" target="_blank">省区市</a>
+    <a href="" target="_blank">视频锦集</a>
+    <a href="" target="_blank">脱贫故事</a>
+    <a href="" target="_blank">扶贫日志</a>
+    <a href="" target="_blank">防返贫</a>
+    <a href="" target="_blank">图说扶贫</a>
+    <a href="" target="_blank">我要留言</a>
+  </div>
+</template>
+
+<style lang="less">
+
+a:link,a:visited {
+  color: #484848;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c00;
+  text-decoration: underline;
+}
+.nav, .nav a:link, .nav a:visited, .nav a:hover {
+  color: #fff;
+}
+
+.nav {
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 20px;
+  background: #003c9f;
+}
+
+.nav a {
+  padding: 0 10px;
+  padding-left: 23px;
+  margin: 0 5px;
+  border-left: 2px solid white;
+}
+
+</style>

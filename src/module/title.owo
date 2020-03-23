@@ -1,0 +1,41 @@
+<template lang="pug">
+.title-bar
+  .text {{prop._text}}
+  .decorate
+  .more
+    a(href="") 查看更多>>
+</template>
+
+
+<style lang="less">
+.title-bar {
+  position: relative;
+}
+.text {
+  font-size: 50px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-family: SimSun;
+  font-weight: bold;
+  color: #073a93;
+}
+.more {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  a {
+    color: #1a1a1a;
+  }
+}
+.decorate {
+  background-color: #fa7354;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  margin: auto;
+}
+</style>

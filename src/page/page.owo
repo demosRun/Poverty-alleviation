@@ -1,0 +1,37 @@
+<template lang="pug">
+.home
+  plug(_name="topBarInfo" _src="https://template.owo.ink/156839be327a548d.owo")
+  plug(_name="e9o2In79" _src="https://template.owo.ink/7f4e1f0f67d338e0.owo")
+  //- 主图
+  .main-image
+    img(src="@|main.jpg|")
+  plug.w1000(_name="title" _text="战贫困" _src="./src/module/title.owo")
+  plug.w1000(_name="title" _text="特别策划" _src="./src/module/title.owo")
+  plug.w1000(_name="title" _text="视频集锦" _src="./src/module/title.owo")
+  plug.w1000(_name="title" _text="我的脱贫故事" _src="./src/module/title.owo")
+  plug.w1000(_name="title" _text="扶贫日志" _src="./src/module/title.owo")
+  plug.w1000(_name="title" _text="扶贫带头人" _src="./src/module/title.owo")
+  plug.w1000(_name="title" _text="防返贫" _src="./src/module/title.owo")
+  plug.w1000(_name="title" _text="图说扶贫" _src="./src/module/title.owo")
+  plug.w1000(_name="title" _text="我要留言" _src="./src/module/title.owo")
+  plug.w1000(_name="title" _text="对口扶贫" _src="./src/module/title.owo")
+  plug.w1000(_name="title" _text="精彩专题" _src="./src/module/title.owo")
+  //- 版权信息
+  plug(_name="copyright" _src="https://template.owo.ink/060579f0b4f1bcaa.owo")
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+
+    }
+  }
+</script>
+
+
+<style lang="less">
+.main-image img {
+  width: 100%;
+  display: block;
+}
+</style>
