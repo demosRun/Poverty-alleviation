@@ -65,3 +65,54 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 .fl {
   float: left;
 }
+
+.home .title-bar {
+  position: relative;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.diary {
+  margin-top: 50px;
+}
+
+.w1000.leaving {
+  margin-top: 60px;
+}
+
+.w1000.leader {
+  margin-top: 60px;
+}
+
+.p1_con_1 li.t02 #b_address {
+  display: block;
+  margin: 0 auto;
+}
+
+.t04 {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  width: 340px;
+}
+.p1_con_1 li {
+  text-align: center;
+}
+
+.p1_con_1 li.t05 {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.liuyanTab {
+  align-items: center;
+  text-align: center;
+}
+
+.p1_con_1 li.t01 {
+  text-align: center;
+}
+
+.p1_con_1 li.t02 input#subject {
+  width: 187px;
+}

@@ -1,13 +1,13 @@
 <template>
   <div class="nav clearfix">
-    <a href="" target="_blank">战贫困</a>
-    <a href="" target="_blank">省区市</a>
-    <a href="" target="_blank">视频锦集</a>
-    <a href="" target="_blank">脱贫故事</a>
-    <a href="" target="_blank">扶贫日志</a>
-    <a href="" target="_blank">防返贫</a>
-    <a href="" target="_blank">图说扶贫</a>
-    <a href="" target="_blank">我要留言</a>
+    <a href="#zhanpinkun">战贫困</a>
+    <a href="#tbch">特别策划</a>
+    <a href="#spjj">视频锦集</a>
+    <a href="#wdtpgs">脱贫故事</a>
+    <a href="#fprj">扶贫日志</a>
+    <a href="#fpdtr">扶贫带头人</a>
+    <a href="#ffp">防返贫</a>
+    <a href="#tsfp">图说扶贫</a>
   </div>
 </template>
 

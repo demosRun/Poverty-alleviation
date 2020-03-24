@@ -1,14 +1,11 @@
 <template>
-  <div class="LbWMGSGs">
+  <div class="UMgga6Ih">
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide card" :for="data.swiperList">
           <div class="swiper-item" >
             <a href="#">
               <img width="300" height="170" src="{value.image}"/>
-              <div class="image-title">{value.title}</div>
-              <!-- 播放按钮 -->
-              <img class="play-button" src="@|play.png|">
             </a>
           </div>
         </div>
@@ -27,13 +24,7 @@
     },
     data: {
       swiper: null,
-      swiperList: [
-        {"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907120738032280874.jpg","title":"中国冰雕亮相莫斯科"},
-        {"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907113668180928777.jpg","title":"云南星云湖开湖捕鱼忙"},
-        {"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907113668180928777.jpg","title":"探访新中国首个名人纪念馆上海鲁迅纪念馆"},
-        {"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907110150545385955.jpg","title":"呼伦贝尔：燃情雪橇激情冬日"},
-        {"image":"http://www.people.com.cn/NMediaFile/2019/1225/MAIN201912250710121236217686613.jpg","title":"连云港：“海上菜园”收割忙"}
-      ]
+      swiperList: [{"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907120738032280874.jpg","title":"中国冰雕亮相莫斯科"},{"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907113668180928777.jpg","title":"云南星云湖开湖捕鱼忙"},{"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907113668180928777.jpg","title":"探访新中国首个名人纪念馆上海鲁迅纪念馆"},{"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907110150545385955.jpg","title":"呼伦贝尔：燃情雪橇激情冬日"},{"image":"http://www.people.com.cn/NMediaFile/2019/1225/MAIN201912250710121236217686613.jpg","title":"连云港：“海上菜园”收割忙"}]
     },
     swiperNext: function () {
       // console.log('swiperNext')
@@ -47,7 +38,7 @@
 </script>
 
 <style lang="less">
-  .LbWMGSGs {
+  .UMgga6Ih {
     height: 210px;
     width: 1100px;
     margin: 0 50px;
@@ -73,7 +64,7 @@
     }
   }
 
-  .LbWMGSGs {
+  .UMgga6Ih {
     position: relative;
     .swiper-button {
       position: absolute;

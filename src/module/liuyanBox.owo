@@ -1,0 +1,162 @@
+<template>
+<div class="clearfix p1_con_1" id="a01" name="a01">
+	<div class="liuyanTab">
+		<span class="active">给部委留言</span>
+	    <span>给地方领导留言</span>
+	  
+	</div>
+	<div class="liuyanBox">
+	  <ul class="clearfix">
+      <li class="t01"><span>您的留言位置：</span>
+        <select name="" id="buweiList" onchange="setProBuweiId(value)">
+        <option style="color: #b6b6b6" disabled="" selected="">请选择部委</option><option value="5000" topids="">外交部</option><option value="5001" topids="">国家发展和改革委员会</option><option value="5003" topids="">科学技术部</option><option value="5004" topids="">工业和信息化部</option><option value="5005" topids="">公安部</option><option value="5006" topids="">民政部</option><option value="5007" topids="">司法部</option><option value="5008" topids="">财政部</option><option value="5009" topids="">人力资源和社会保障部</option><option value="5010" topids="">自然资源部</option><option value="5011" topids="">生态环境部</option><option value="5012" topids="">住房和城乡建设部</option><option value="5013" topids="">交通运输部</option><option value="5014" topids="">水利部</option><option value="5015" topids="">农业农村部 </option><option value="5016" topids="">商务部</option><option value="5017" topids="">文化和旅游部</option><option value="5018" topids="">国家卫生健康委员会</option><option value="5019" topids="">退役军人事务部</option><option value="5020" topids="">应急管理部</option><option value="5021" topids="">中国人民银行</option><option value="5022" topids="">海关总署</option><option value="5023" topids="">国家税务总局</option><option value="5024" topids="">国家市场监督管理总局</option><option value="5025" topids="">国家广播电视总局</option><option value="5026" topids="">国家体育总局</option><option value="5027" topids="">国家统计局</option><option value="5028" topids="">国家医疗保障局</option><option value="5029" topids="">国家机关事务管理局</option><option value="5030" topids="">国家互联网信息办公室</option><option value="5031" topids="">中国气象局</option><option value="5032" topids="">中国银行保险监督管理委员会</option><option value="5033" topids="">中国证券监督管理委员会</option><option value="5034" topids="">国家粮食和物资储备局</option><option value="5035" topids="">国家能源局</option><option value="5036" topids="">国家国防科技工业局</option><option value="5037" topids="">国家烟草专卖局</option><option value="5038" topids="">国家移民管理局</option><option value="5039" topids="">国家林业和草原局</option><option value="5040" topids="">国家铁路局</option><option value="5041" topids="">中国民用航空局</option><option value="5042" topids="">国家邮政局</option><option value="5043" topids="">国家文物局</option><option value="5044" topids="">国家外汇管理局</option><option value="5045" topids="">国家药品监督管理局</option><option value="5046" topids="">国家知识产权局</option><option value="5047" topids="">国家档案局</option></select><em>-</em>
+        <select name="" id="buwei" onchange="setLeaderBuweiId(value)">
+          <option style="color: #b6b6b6" disabled="" selected="">请选择</option>
+        </select>
+      </li>
+      <li class="t02">
+        <input name="" id="b_subject" placeholder="请输入标题，不超过22字，请勿填写特殊符号" maxlength="22">
+        <select name="" onchange="setDomianBuweiId(value)">
+          <option style="color: #b6b6b6" disabled="" selected="">分类</option>
+          <option value="1">咨询</option>
+          <option value="5">建言</option>
+          <option value="2">投诉</option>
+          <option value="6">求助</option>
+          <option value="9">感谢</option>
+        </select>
+      </li>      
+      <li class="t03">
+        <textarea cols="" rows="" id="b_content" maxlength="1000" placeholder="请输入留言内容（字数不得少于20字，不得超过1000字）"></textarea>
+		<textarea cols="" rows="" id="b_hiddenRemark" maxlength="200" placeholder="涉及您或他人隐私的信息，以及其他您认为不适合公开展示的信息，请填写在此框内。"></textarea>
+      </li>
+	  <li class="t02"><input type="text" id="b_address" maxlength="20" placeholder="选填:事发详细地址"></li>
+      <li class="t04">
+        <input name="" id="b_username" placeholder="用户名" class="input01"><input name="" id="b_tel" placeholder="联系电话" class="input02">
+      </li>
+      <li class="t05">
+        <input name="" id="b_code" placeholder="输入验证码" class="input01">     
+        <input type="button" value="发送验证码" id="b_sendCode" class="input02"> 
+        <span>
+          <input name="提交" type="button" value="提交" class="input02" onclick="subbuwei()">
+        </span>
+      </li>
+    </ul>
+	</div>
+	<!--地方领导留言-->
+	<div class="liuyanBox" style="display: none;">
+	  <ul class="clearfix">
+      <li class="t01"><span>您的留言位置：</span>
+        <select name="" onchange="setProId(value)">
+          <option style="color: #b6b6b6" disabled="" selected="">选择省份</option>
+          <option value="4">北京市</option>
+          <option value="5">天津市</option>
+          <option value="6">河北省</option>
+          <option value="17">山西省</option>
+          <option value="18">内蒙古自治区</option>
+          <option value="8">辽宁省</option>
+          <option value="9">吉林省</option>
+          <option value="10">黑龙江省</option>
+          <option value="12">上海市</option>
+          <option value="13">江苏省</option>
+          <option value="14">浙江省</option>
+          <option value="19">安徽省</option>
+          <option value="20">福建省</option>
+          <option value="21">江西省</option>
+          <option value="22">山东省</option>
+          <option value="27">河南省</option>
+          <option value="28">湖北省</option>
+          <option value="29">湖南省</option>
+          <option value="30">广东省</option>
+          <option value="31">广西壮族自治区</option>
+          <option value="32">海南省</option>
+          <option value="33">重庆市</option>
+          <option value="34">四川省</option>
+          <option value="35">贵州省</option>
+          <option value="36">云南省</option>
+          <option value="37">西藏自治区</option>
+          <option value="41">陕西省</option>
+          <option value="42">甘肃省</option>
+          <option value="43">青海省</option>
+          <option value="44">宁夏回族自治区</option>
+          <option value="45">新疆维吾尔自治区</option>
+          <option value="38">香港特别行政区</option>
+          <option value="39">澳门特别行政区</option>
+        </select><em>-</em>
+        <select name="" id="leader" onchange="setLeaderId(value)">
+          <option style="color: #b6b6b6" disabled="" selected="">请选择</option>
+        </select>
+        <em>-</em>
+        <select name="" id="leader2" onchange="setLeaderId1(value)">
+          <option style="color: #b6b6b6" disabled="" selected="">请选择</option>
+        </select>
+      </li>
+      <li class="t02">
+        <input name="" id="subject" placeholder="请输入标题，不超过22字，请勿填写特殊符号" maxlength="22">
+        <select name="" onchange="setDomianId(value)">
+          <option style="color: #b6b6b6" disabled="" selected="">领域</option>
+          <option value="7">城建</option>
+          <option value="6">交通</option>
+          <option value="9">三农</option>
+          <option value="13">环保</option>
+          <option value="14">教育</option>
+          <option value="12">医疗</option>
+          <option value="1">治安</option>
+          <option value="5">旅游</option>
+          <option value="11">就业</option>
+          <option value="10">文娱</option>
+          <option value="20">金融</option>
+          <option value="4">企业</option>
+          <option value="2">政务</option>
+          <option value="16">其他</option>
+        </select>
+		  <select name="" onchange="setTypeId(value)">
+          <option style="color: #b6b6b6" disabled="" selected="">分类</option>
+          <option value="1">咨询</option>
+          <option value="5">建言</option>
+          <option value="2">投诉</option>
+          <option value="6">求助</option>
+          <option value="9">感谢</option>
+        </select>
+      </li>      
+      <li class="t03">
+        <textarea cols="" rows="" id="mcontent" maxlength="1000" placeholder="请输入留言内容（字数不得少于20字，不得超过1000字）"></textarea>
+		  <textarea cols="" rows="" id="hiddenRemark" maxlength="200" placeholder="涉及您或他人隐私的信息，以及其他您认为不适合公开展示的信息，请填写在此框内。"></textarea>
+      </li>
+<!--	  <li class="t02"><input type="text" id="address" maxlength="20" placeholder="选填:事发详细地址"></li>-->
+      <li class="t04">
+        <input name="" id="username" placeholder="用户名" class="input01"><input name="" id="tel" placeholder="联系电话" class="input02">
+      </li>
+      <li class="t05">
+        <input name="" id="code" placeholder="输入验证码" class="input01">     
+        <input type="button" value="发送验证码" id="sendCode" class="input02"> 
+        <span>
+          <input name="提交" type="button" value="提交" class="input02" onclick="sub()">
+<!--          <input name="查看其他网民留言" type="button" value="查看其他网民留言" class="input03" onclick="window.open('http://liuyan.people.com.cn/threads/searchIndex?keywords=')" />-->
+        </span>
+      </li>
+    </ul>
+	</div>
+</div>
+</template>
+
+<script>
+  module.exports = {
+    data: {
+      swiper: null
+    },
+    created: function () {
+      // 轮播图展示区域swiper
+      this.data.swiper = new Swiper(this.$el, {
+        pagination: this.$el.getElementsByClassName('pagination')[0],
+        slidesPerView: 2,
+        slidesPerGroup : 2,
+        slidesPerColumn: 2
+      })
+    }
+  }
+</script>
+
+
+<style lang="less">
+
+</style>

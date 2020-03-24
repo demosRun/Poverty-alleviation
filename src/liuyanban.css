@@ -1,0 +1,123 @@
+.leaving-window {
+  background-color: #d4e0ee;
+}
+
+.liuyanTab {
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+.liuyanTab span.active {
+  background: #bb0505;
+}
+
+.liuyanTab span {
+  font-size: 16px;
+  background: #7facde;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.p1_con_1 li {
+  margin-bottom: 15px;
+  color: #3271b7;
+}
+.p1_con_1 li.t01 {
+  font-size: 20px;
+  list-style: none;
+}
+.p1_con_1 li.t01 select {
+  height: 35px;
+  color: #3271b7;
+  padding-left: 10px;
+  font-size: 14px;
+  margin-left: 2px;
+  margin-right: 2px;
+  min-width: 130px;
+}
+
+.p1_con_1 li.t02 input {
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  color: #3271b7;
+  padding: 0 10px;
+  width: 388px;
+  margin-right: 10px;
+}
+.p1_con_1 li.t02 select {
+  height: 35px;
+  color: #3271b7;
+  padding-left: 10px;
+  font-size: 14px;
+  min-width: 192px;
+}
+.p1_con_1 li.t04 .input01 {
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  color: #3271b7;
+  padding: 0 10px;
+  width: 110px;
+}
+.p1_con_1 li.t04 .input02 {
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  color: #3271b7;
+  padding: 0 10px;
+  width: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.p1_con_1 li.t03 textarea {
+  width: 592px;
+  padding: 10px;
+  color: #3271b7;
+  font-size: 14px;
+  height: 80px;
+}
+.p1_con_1 li.t03 textarea {
+  margin-bottom: 15px;
+}
+
+.p1_con_1 li.t05 .input01 {
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  color: #3271b7;
+  padding: 0 10px;
+  width: 110px;
+  vertical-align: middle;
+  margin-right: 10px;
+  background: #d3e2f3;
+  border-radius: 15px;
+  border: 1px solid #7facde;
+}
+.p1_con_1 li.t05 .input02 {
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  color: #fff;
+  padding: 0 10px;
+  width: 110px;
+  vertical-align: middle;
+  margin-right: 10px;
+  background: #7facde;
+  border-radius: 15px;
+  border: none;
+}
+.p1_con_1 li.t05 span .input02 {
+  background: #d83c38;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 16px;
+  width: 110px;
+  line-height: 35px;
+  height: 35px;
+  text-align: center;
+}

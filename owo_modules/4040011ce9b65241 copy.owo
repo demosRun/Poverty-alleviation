@@ -27,13 +27,7 @@
     },
     data: {
       swiper: null,
-      swiperList: [
-        {"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907120738032280874.jpg","title":"中国冰雕亮相莫斯科"},
-        {"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907113668180928777.jpg","title":"云南星云湖开湖捕鱼忙"},
-        {"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907113668180928777.jpg","title":"探访新中国首个名人纪念馆上海鲁迅纪念馆"},
-        {"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907110150545385955.jpg","title":"呼伦贝尔：燃情雪橇激情冬日"},
-        {"image":"http://www.people.com.cn/NMediaFile/2019/1225/MAIN201912250710121236217686613.jpg","title":"连云港：“海上菜园”收割忙"}
-      ]
+      swiperList: [{"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907120738032280874.jpg","title":"中国冰雕亮相莫斯科"},{"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907113668180928777.jpg","title":"云南星云湖开湖捕鱼忙"},{"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907113668180928777.jpg","title":"探访新中国首个名人纪念馆上海鲁迅纪念馆"},{"image":"http://www.people.com.cn/NMediaFile/2019/1226/MAIN201912260907110150545385955.jpg","title":"呼伦贝尔：燃情雪橇激情冬日"},{"image":"http://www.people.com.cn/NMediaFile/2019/1225/MAIN201912250710121236217686613.jpg","title":"连云港：“海上菜园”收割忙"}]
     },
     swiperNext: function () {
       // console.log('swiperNext')

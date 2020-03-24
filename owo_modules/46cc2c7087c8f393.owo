@@ -10,7 +10,7 @@
       <span>远方的母亲，请接受来自军人的祝福</span>
       </div> 
       <div class="swiper-slide">
-      <a href="#" target="_blank"><img src="http://www.people.com.cn/NMediaFile/2019/0619/MAIN201906191838270226271022901.jpg" width="640" height="400" alt="" /></a>
+      <a href="#" target="_blank"><img src="http://www.people.com.cn/NMediaFile/2020/0324/MAIN202003241016325073558905659.jpg" width="640" height="400" alt="" /></a>
       <span>纪念百年五四——新时代青年新面貌</span>
       </div> 
     </div>
@@ -28,19 +28,21 @@
       swiper: null
     },
     created: function () {
-      this.data.swiper = new Swiper(this.$el, {
-        mode: 'horizontal',
-        autoplay: 5000,
-        autoplayDisableOnInteraction: false,
-        loop: true,
-        slidesPerView: 1,
-        mousewheelControl: false,
-        onSlideChangeStart: (swiper) => {
-          const activeIndex = (swiper.activeLoopIndex ? swiper.activeLoopIndex :swiper.activeIndex) + 1
-          this.$el.getElementsByClassName('thisp')[0].innerText = activeIndex
-        }
-      })
-      this.$el.getElementsByClassName('allp')[0].innerText = this.data.swiper.slides.length
+      this.$el.getElementsByClassName('allp')[0].innerText = this.$el.getElementsByClassName('swiper-slide').length
+      setTimeout(() => {
+        this.data.swiper = new Swiper(this.$el, {
+          mode: 'horizontal',
+          autoplay: 5000,
+          autoplayDisableOnInteraction: false,
+          loop: true,
+          slidesPerView: 1,
+          mousewheelControl: false,
+          onSlideChangeStart: (swiper) => {
+            const activeIndex = (swiper.activeLoopIndex ? swiper.activeLoopIndex : swiper.realIndex) + 1
+            this.$el.getElementsByClassName('thisp')[0].innerText = activeIndex
+          }
+        })
+      }, 0)
     },
     stop: function () {
       this.data.swiper.stopAutoplay()
@@ -95,7 +97,7 @@
   position: absolute;
   cursor: pointer;
   bottom: 18px;
-  left: 70px;
+  left: 20px;
   z-index: 10;
 }
 
@@ -106,7 +108,7 @@
   position: absolute;
   cursor: pointer;
   bottom: 18px;
-  right: 70px;
+  right: 20px;
   z-index: 10;
 }
 

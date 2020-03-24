@@ -5,12 +5,18 @@
 
 
 <style lang="less">
+.double-row-list {
+  width: 960px;
+  margin: 0 auto;
+}
 p, a {
   color: #454545;
   display: block;
   float: left;
   width: 50%;
-  line-height: 2;
+  line-height: 32px;
   font-size: 16px;
+  height: 32px;
+  overflow: hidden;
 }
 </style>

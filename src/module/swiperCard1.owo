@@ -46,6 +46,7 @@
       bottom: 0;
       margin: auto;
       z-index: 2;
+      box-shadow: 5px 3px 6px #a79c9c;
     }
     .right {
       border: 2px solid #dcdcdc;
@@ -84,6 +85,9 @@
   }
   .swiper-pagination-bullet-active {
     background-color: #fd8865;
+  }
+  .right p a {
+    color: #c8081f;
   }
 }
 </style>

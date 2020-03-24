@@ -1,0 +1,99 @@
+<template>
+  <div class="swiper-container-p2" :mouseenter="stop" :mouseleave="start"> 
+    <div class="swiper-wrapper"> 
+    </div>
+    <div class="prev" o-tap="prev"></div> 
+    <div class="next" o-tap="next"></div> 
+  </div> 
+</template>
+
+<script>
+  module.exports = {
+    data: {
+      swiper: null
+    },
+    created: function () {
+      this.data.swiper = new Swiper(this.$el, {
+        mode: 'horizontal',
+        autoplay: 5000,
+        autoplayDisableOnInteraction: false,
+        loop: true,
+        slidesPerView: 1,
+        mousewheelControl: false,
+      })
+    },
+    stop: function () {
+      this.data.swiper.stopAutoplay()
+    },
+    start: function () {
+      this.data.swiper.startAutoplay()
+    },
+    prev: function () {
+      this.data.swiper.swipePrev ? this.data.swiper.swipePrev(): this.data.swiper.slidePrev()
+    },
+    next: function () {
+      this.data.swiper.swipeNext ? this.data.swiper.swipeNext() : this.data.swiper.slideNext()
+    }
+  }
+</script>
+
+<style lang="less">
+.swiper-container-p2 {
+  position: relative;
+  width: 640px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  color: white;
+}
+
+.swiper-slide {
+  width: 640px;
+  height: 400px;
+  position: relative;
+  a {
+    display: block;
+    color: white;
+  }
+}
+
+.swiper-slide span {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 64px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  line-height: 64px;
+  font-size: 16px;
+}
+
+.prev {
+  background: url(http://www.people.com.cn/img/2016people/images/focus_left_b.png);
+  width: 18px;
+  height: 25px;
+  position: absolute;
+  cursor: pointer;
+  bottom: 18px;
+  left: 20px;
+  z-index: 10;
+}
+
+.next {
+  background: url(http://www.people.com.cn/img/2016people/images/focus_right_b.png);
+  width: 18px;
+  height: 25px;
+  position: absolute;
+  cursor: pointer;
+  bottom: 18px;
+  right: 20px;
+  z-index: 10;
+}
+
+.swiper-pagination1 {
+  display: none;
+}
+
+
+</style>

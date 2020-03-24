@@ -85,12 +85,20 @@
 			"name": "main",
 			"src": "./src/main.js",
 			"resource": true
+		},
+		{
+			"name": "liuyanban",
+			"src": "./src/liuyanban.js"
 		}
 	],
 	"styleList": [
 		{
 			"name": "main",
 			"src": "./src/main.css"
+		},
+		{
+			"name": "liuyanban",
+			"src": "./src/liuyanban.css"
 		},
 		{
 			"name": "swiper-3.4.2.min",

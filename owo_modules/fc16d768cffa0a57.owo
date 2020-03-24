@@ -1,0 +1,71 @@
+<template>
+<div class="rolling-news"> 
+  <div class="demob clear" id="demob"> 
+  <div class="clear" id="demo1b"> 
+    <ul class="news-list-edit">
+    <li><a href="NewsView.shtml?id=33645430" target="_blank">我国首台出口南美洲敞开式岩石隧道掘进机长沙下线</a></li> 
+    <li><a href="NewsView.shtml?id=33645182" target="_blank">杜家毫：坚持守正创新 主动履职尽责 推动湖南省精神文明建设和文艺创作生产再上新台阶</a></li> 
+    <li><a href="NewsView.shtml?id=33645132" target="_blank">湖南湿冷“魔法攻击”正式上线</a></li> 
+    <li><a href="NewsView.shtml?id=33645115" target="_blank">共商妇女发展大计 书写更美好的时代新篇章</a></li> 
+    <li><a href="NewsView.shtml?id=33645102" target="_blank">“房住不炒”，给长沙带来什么</a></li> 
+    <li><a href="NewsView.shtml?id=33645076" target="_blank">湖南省第十三次妇女代表大会闭幕 姜欣当选省妇联主席</a></li> 
+    <li><a href="NewsView.shtml?id=33645074" target="_blank">生态画卷入目来</a></li> 
+    <li><a href="NewsView.shtml?id=33645073" target="_blank">湖南省社科联八届二次常委会召开 张宏森当选省社科联主席</a></li> 
+    <li><a href="NewsView.shtml?id=33645054" target="_blank">地铁3、5号线月底试运行</a></li> 
+    <li><a href="NewsView.shtml?id=33645011" target="_blank">增长50%，湖南进出口增速全国第一</a></li> 
+    <li><a href="NewsView.shtml?id=33645005" target="_blank">湖南省政府就《政府工作报告》征求各界人士意见</a></li> 
+    <li><a href="NewsView.shtml?id=33645004" target="_blank">乌兰：牢记育人初心使命 创建一流农业大学</a></li> 
+    <li><a href="NewsView.shtml?id=33645002" target="_blank">全面推进电力能源领域战略合作 更好服务和保障湖南高质量发展</a></li> 
+    <li><a href="NewsView.shtml?id=33644964" target="_blank">考研冲刺进行时</a></li> 
+    <li><a href="NewsView.shtml?id=33644805" target="_blank">湖南扩大装配式建筑实施范围</a></li> 
+    <li><a href="NewsView.shtml?id=33643366" target="_blank">湖南“操场埋尸案”一审宣判 主犯杜少平被判死刑</a></li> 
+    <li><a href="NewsView.shtml?id=33642227" target="_blank">长沙拟新增69条历史街巷</a></li> 
+    <li><a href="NewsView.shtml?id=33641682" target="_blank">36亿中央财政专项扶贫资金下达湖南</a></li> 
+    <li><a href="NewsView.shtml?id=33641675" target="_blank">长沙年内试点交通事故赔偿“城乡同命同价”</a></li> 
+    <li><a href="NewsView.shtml?id=33641658" target="_blank">寒潮入湘 雨雪天气影响湘北</a></li> 
+    </ul> 
+  </div> 
+  <div class="clear" id="demo2b"> 
+    <ul class="news-list-edit">
+    </ul> 
+  </div> 
+  </div> 
+</div>
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      var speed=60;
+      var demob=document.getElementById("demob");
+      var demo2b=document.getElementById("demo2b");
+      var demo1b=document.getElementById("demo1b");
+      demo2b.innerHTML=demo1b.innerHTML
+      function Marquee(){
+      if(demo2b.offsetTop-demob.scrollTop<=0){
+        demob.scrollTop=0;
+      }
+      else{
+        demob.scrollTop++;
+      }
+      }
+      var MyMar=setInterval(Marquee,speed);
+      demob.onmouseover=function() {clearInterval(MyMar)}
+      demob.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+    }
+  }
+</script>
+
+
+<style>
+.rolling-news {
+  width: 1000px;
+  height: 120px;
+  position: relative;
+}
+.demob {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+</style>
