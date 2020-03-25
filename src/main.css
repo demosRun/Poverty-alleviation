@@ -4,7 +4,6 @@ body, html {
   padding: 0;
   width: 100%;
   user-select: text;
-  min-width: 1200px;
   font-size: 14px;
   font-family: 'pingfang SC','helvetica neue',arial,'hiragino sans gb','microsoft yahei ui','microsoft yahei','simsun',sans-serif;
   -webkit-overflow-scrolling: touch;
@@ -115,4 +114,289 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 
 .p1_con_1 li.t02 input#subject {
   width: 187px;
+}
+
+
+/* 手机适配 */
+
+.pc .no-pc, .phone .no-phone {
+  display: none;
+}
+
+.phone .nav.clearfix {
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.phone .nav.clearfix .link-bar {
+  width: calc(100% - 40px);
+  word-break: keep-all;
+  text-align: left;
+}
+
+.phone .nav.clearfix .link-bar a {
+  padding: 0 0px;
+  padding-left: 10px;
+  margin: 0 5px;
+}
+
+.phone .drop {
+  height: auto;
+}
+
+.phone .drop .no-pc {
+  transform: rotate(180deg);
+}
+
+.phone .main-image {
+  margin-top: 40px;
+}
+
+.phone .w1000 {
+  width: 100%;
+}
+
+.phone .home .title-bar {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.phone .battle h2 {
+  font-size: 26px;
+  line-height: 37px;
+  margin-bottom: 10px;
+}
+
+.phone .swiper-container-p2 {
+  width: 98%;
+  height: 60vw;
+  margin: 0 1vw;
+}
+
+.phone .swiper-container-p2 .swiper-slide, .phone .swiper-container-p2 a, .phone .swiper-container-p2 .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.phone .swiper-container-p2 .num1 {
+  display: none;
+}
+
+.phone .swiper-container-p2 .swiper-slide span {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+.phone .swiper-container-p2 .prev {
+  bottom: 7px;
+  left: 2%;
+}
+
+.phone .swiper-container-p2 .next {
+  bottom: 7px;
+  right: 2%;
+}
+
+.phone .box-1 .right {
+  height: 240px;
+  width: 92%;
+  padding: 0;
+  margin: 0 4%;
+  margin-top: 20px;
+}
+
+.phone .info-card {
+  width: 94%;
+  margin: 0 3%;
+  padding: 0;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.phone .phone-more-button {
+  background-color: #fa7354;
+  color: white;
+  font-size: 17px;
+  padding: 2px 6px;
+  margin-right: 10px;
+}
+
+.phone .box-2 .info-card h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  line-height: 37px;
+}
+
+.phone .box-2 .info-card p {
+  height: auto;
+}
+
+.phone .box.box-2 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.phone .plan .show-other {
+  width: 96%;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.phone .more {
+  display: none;
+}
+
+.phone .swiper-WCNZqPZM {
+  width: 98%;
+  margin: 0 1%;
+  height: 60vw;
+}
+
+.phone .swiper-WCNZqPZM .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.phone .box-3 .right {
+  width: 90%;
+  margin: 0px 5%;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.phone .swiper-HGypSGwO .swiper-slide .left {
+  width: 25vw;
+  height: 25vw;
+  margin-left: 1vw;
+  box-shadow: 1px 1px 5px #ccc;
+}
+
+.phone .swiper-HGypSGwO .swiper-slide .right {
+  width: 65%;
+}
+.phone .swiper-HGypSGwO .swiper-slide .right p {
+  line-height: 1.5;
+  height: 56px;
+  font-size: 12px;
+}
+
+.phone .swiper-HGypSGwO .swiper-slide .right h2, .swiper-HGypSGwO .swiper-slide .right h3 {
+  font-size: 13px;
+  line-height: 1.5;
+  height: 21px;
+  overflow: hidden;
+}
+
+.phone .swiper-HGypSGwO .swiper-pagination-bullet {
+  width: 38px;
+}
+
+.phone .swiper-nQRKuKHI {
+  width: 78%;
+  margin: 0 auto;
+}
+
+.phone .swiper-nQRKuKHI .swiper-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  padding: 0;
+}
+
+.phone .swiper-nQRKuKHI .swiper-container .swiper-slide .show .index {
+  display: none;
+}
+
+.phone .swiper-nQRKuKHI .swiper-container .swiper-slide:nth-child(even) .show, .phone .swiper-nQRKuKHI .swiper-container .swiper-slide:nth-child(even) .info {
+  position: relative;
+}
+
+.phone .swiper-nQRKuKHI .prev {
+  width: 6%;
+  right: -12%;
+}
+
+.phone .swiper-nQRKuKHI .next {
+  left: -11%;
+  width: 6%;
+}
+
+.phone .swiper-nQRKuKHI .swiper-container .swiper-slide .show {
+  overflow: hidden;
+}
+
+.phone .swiper-nQRKuKHI .swiper-container .swiper-slide .show img {
+  width: 100%;
+  height: auto;
+}
+
+.phone .w1200 {
+  width: 100%;
+}
+
+.phone .UMgga6Ih .swiper-container {
+  width: 100%;
+}
+
+.phone .liuyan, .phone .liuyan img {
+  width: 20vw;
+  z-index: 999;
+}
+
+.phone .auto-more-link {
+  position: absolute;
+  width: 100%;
+  display: block;
+  text-align: center;
+  bottom: -50px;
+  line-height: 40px;
+}
+
+.phone .plate {
+  position: relative;
+}
+
+.phone .album {
+  margin-top: 50px;
+}
+.phone .swiper-nQRKuKHI .swiper-container {
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+.phone .swiper-nQRKuKHI .swiper-container .swiper-slide {
+  box-shadow: 1px 1px 5px #ccc;
+}
+
+.phone .UMgga6Ih .swiper-button-next {
+  width: 5vw;
+  height: auto;
+  right: 2%;
+}
+
+.phone .UMgga6Ih .swiper-button-prev {
+  width: 5vw;
+  height: auto;
+  left: 2%;
+}
+
+.phone .UMgga6Ih .swiper-container .swiper-item {
+  width: 71%;
+  height: 100%;
+}
+
+.phone .city-select li, .phone .city-select li .name, .phone .city-select {
+  font-size: 16px;
+}
+
+.phone .title-bar .text {
+  font-size: 29px;
+}
+
+/* 页面加载完毕再显示 */
+body {
+  opacity: 0;
 }

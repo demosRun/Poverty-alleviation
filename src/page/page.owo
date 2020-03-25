@@ -1,28 +1,27 @@
 <template lang="pug">
 .home
-  plug(_name="topBarInfo" _src="https://template.owo.ink/156839be327a548d.owo")
+  plug.no-phone(_name="topBarInfo" _src="https://template.owo.ink/156839be327a548d.owo")
   plug(_name="e9o2In79" _src="https://template.owo.ink/7f4e1f0f67d338e0.owo")
   //- 主图
   .main-image
     img(src="@|main.jpg|")
   a(name="zhanpinkun")
-  .w1000.battle
+  .w1000.battle.plate
     plug(_name="title" _text="战贫困" _src="./src/module/title.owo")
     h2 “习近平:让青春在党和人民最需要的地方绽放绚丽之花
     .box.box-1.clear
       plug.fl.left(_name="44V6SpMv" _src="https://template.owo.ink/46cc2c7087c8f393.owo")
       plug.news-list.fl.right(_name="rolling-news-nomer" _src="https://template.owo.ink/fc16d768cffa0a57.owo")
-  
   a(name="tbch")
-  .w1000.plan
+  .w1000.plan.plate
     plug(_name="title" _text="特别策划" _src="./src/module/title.owo")
     .box.box-2.clear
       //- 自动生成
       plug.fl.left(_name="46ccCopy" _src="./src/module/46ccCopy.owo")
       .info-card.fl.right
-    
-    // 特别策划的省份选择条
-    ul.city-select.clear
+    .no-pc.show-other 查看其它地区策划:
+    // 特别策划的省份选择条 PC
+    ul.city-select.clear.no-phone
       li(:for="24" o-tap="changeCity")
         span.name 北京{key}
         .swiper-wrapper
@@ -39,20 +38,27 @@
               img(src="http://www.people.com.cn/NMediaFile/2020/0324/MAIN202003241016325073558905659.jpg" width="640" height="400" alt="")
               span {key}中乌“合作—2019”联合反恐演练圆满结束
         .info-card
-          h2 北京{key}
-          h3 {key}习近平:让青春在党和人民最需要的地方绽放绚丽之花
+          
+          h2.no-phone 北京{key}
+          h3
+            // 手机上的跳转按钮
+            a.no-pc.phone-more-button(href="#") 北京{key}篇
+            span {key}习近平:让青春在党和人民最需要的地方绽放绚丽之花
+          
           p &emsp;&emsp;70年披荆斩棘，70年风雨兼程。70年来，在党的正确领导下，在中国人民及海内外华人同胞的共同努力下  70年披荆斩棘，70年风雨兼程。70年来，在党的正确领导下，在中国人民及海内外华人同胞的共同努力下  70年披荆斩棘，70年风雨兼程。70年来，在党的正确领导下
-          a.more-button(href="#") 进入北京{key}篇
-  
+          a.no-phone.more-button(href="#") 进入北京{key}篇
+    // 自动生成的手机省份选择
+    select.no-pc.auto-city-select
+      option(disabled="disabled" value="" selected) 请选择地区
   a(name="spjj")
-  .video
+  .video.no-phone.plate
     plug.w1000(_name="title" _text="视频集锦" _src="./src/module/title.owo")
     .color
       .w1200
         plug(_name="switchShow" _src="https://template.owo.ink/4040011ce9b65241.owo")
   
   a(name="wdtpgs")
-  .w1000.story
+  .w1000.story.plate
     plug(_name="title" _text="我的脱贫故事" _src="./src/module/title.owo")
     .box.box-3.clear
       plug.fl.left(_name="swiperBox" _src="https://template.owo.ink/cf50e435d5d618e9.owo")
@@ -69,42 +75,45 @@
         a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
         a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
         a 字体宋体，字号14号，行间距30px，字体宋体，字号14号，行间距30px
-  
+    //- 会自动生成链接 
+    a.no-pc.auto-more-link 查看更多
   a(name="fprj")
   //- 扶贫日记
-  .w1000.diary
+  .w1000.diary.plate
     plug(_name="title" _text="扶贫日志" _src="./src/module/title.owo")
-    plug(_name="swiperCard1" _text="扶贫日志" _src="./src/module/swiperCard1.owo")
-  
+    plug(_name="swiperCard1" _src="./src/module/swiperCard1.owo")
+    //- 会自动生成链接 
+    a.no-pc.auto-more-link 查看更多
   a(name="fpdtr")
-  .w1000.leader
+  .w1000.leader.plate
     plug(_name="title" _text="扶贫带头人" _src="./src/module/title.owo")
-    plug(_name="swiperCard2" _text="扶贫日志" _src="./src/module/swiperCard2.owo")
-  
+    plug(_name="swiperCard2" _src="./src/module/swiperCard2.owo")
+    //- 会自动生成链接 
+    //- a.no-pc.auto-more-link 查看更多
   a(name="ffp")
-  .w1000.prevent
+  .w1000.prevent.no-phone.plate
     plug(_name="title" _text="防返贫" _src="./src/module/title.owo")
-    plug(_name="doubleRowList" _text="扶贫日志" _src="./src/module/doubleRowList.owo")
+    plug(_name="doubleRowList" _src="./src/module/doubleRowList.owo")
   
   a(name="tsfp")
-  .picture
+  .picture.no-phone.plate
     plug.w1000(_name="title" _text="图说扶贫" _src="./src/module/title.owo")
     .color
       plug.w1000(_name="high1" _src="https://template.owo.ink/2ec182897c13d555.owo")
   
   a(name="wyly")
-  .w1000.leaving
+  .w1000.leaving.no-phone.plate
     plug(_name="title" _text="我要留言" _src="./src/module/title.owo")
     .leaving-window
       plug(_name="liuyanBox" _src="./src/module/liuyanBox.owo")
   
   a(name="dkfp")
-  .w1000.direct
+  .w1000.direct.no-phone.plate
     plug(_name="title" _text="对口扶贫" _src="./src/module/title.owo")
     plug(_name="doubleRowList" _text="扶贫日志" _src="./src/module/doubleRowList.owo")
   
   a(name="jczt")
-  .album
+  .album.plate
     plug.w1000(_name="title" _text="精彩专题" _src="./src/module/title.owo")
     plug.w1200(_name="switchShow" _src="./src/module/noPlayList.owo")
   //- 版权信息
@@ -128,6 +137,16 @@
       const selectList = owo.query('.city-select li')
       setTimeout(() => {
         if (selectList[0]) this.changeCity(selectList[0])
+        // 生成自动链接
+        // const autoMoreLinkList = document.querySelectorAll('.auto-more-link')
+        // for (let index = 0; index < autoMoreLinkList.length; index++) {
+        //   const element = autoMoreLinkList[index];
+        //   const parent = element.parentNode
+        //   const parLink = parent.querySelector('.title-bar .more a')
+        //   if (parLink) {
+        //     element.href = parLink.href
+        //   }
+        // }
       }, 500);
     },
     hideBlock: function (ele) {
@@ -327,7 +346,7 @@ a.liuyan {
 .nav.clearfix {
   position: fixed;
   width: 100%;
-  top: 50px;
+  top: 0px;
   z-index: 99;
   height: 50px;
   line-height: 50px;

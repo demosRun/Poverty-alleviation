@@ -20,8 +20,8 @@
       // 轮播图展示区域swiper
       this.data.swiper = new Swiper(this.$el, {
         pagination: this.$el.getElementsByClassName('pagination')[0],
-        slidesPerView: 2,
-        slidesPerGroup : 2,
+        slidesPerView: screenInfo.isPc ? 2 : 1,
+        slidesPerGroup : screenInfo.isPc ? 2 : 1,
         slidesPerColumn: 2
       })
     }

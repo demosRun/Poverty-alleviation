@@ -20,7 +20,11 @@
   module.exports = {
     created: function () {
       const cont = this.$el.getElementsByClassName('swiper-container')[0]
-      this.data.swiper = new Swiper(cont, {"loop":true,"autoplay":3000,"slidesPerView":3})
+      this.data.swiper = new Swiper(cont, {
+        "loop":true,
+        "autoplay":3000,
+        "slidesPerView": screenInfo.isPc ? 3 : 1
+      })
     },
     data: {
       swiper: null,

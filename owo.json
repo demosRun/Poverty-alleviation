@@ -89,6 +89,14 @@
 		{
 			"name": "liuyanban",
 			"src": "./src/liuyanban.js"
+		},
+		{
+			"name": "check",
+			"src": "./owo_modules/check"
+		},
+		{
+			"name": "ie-support",
+			"src": "./owo_modules/ie-support"
 		}
 	],
 	"styleList": [

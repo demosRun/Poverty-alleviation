@@ -3,7 +3,7 @@
   .text {{prop._text}}
   .decorate
   .more
-    a(href="") 查看更多>>
+    a(href="#") 查看更多>>
 </template>
 
 

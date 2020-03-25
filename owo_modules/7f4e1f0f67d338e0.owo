@@ -1,15 +1,34 @@
 <template>
   <div class="nav clearfix">
-    <a href="#zhanpinkun">战贫困</a>
-    <a href="#tbch">特别策划</a>
-    <a href="#spjj">视频锦集</a>
-    <a href="#wdtpgs">脱贫故事</a>
-    <a href="#fprj">扶贫日志</a>
-    <a href="#fpdtr">扶贫带头人</a>
-    <a href="#ffp">防返贫</a>
-    <a href="#tsfp">图说扶贫</a>
+    <div class="link-bar">
+      <a href="#zhanpinkun">战贫困</a>
+      <a href="#tbch">特别策划</a>
+      <a href="#spjj">视频锦集</a>
+      <a href="#wdtpgs">脱贫故事</a>
+      <a href="#fprj">扶贫日志</a>
+      <a href="#fpdtr">扶贫带头人</a>
+      <a href="#ffp">防返贫</a>
+      <a href="#tsfp">图说扶贫</a>
+    </div>
+    <img class="no-pc" o-tap="switchDrop" src="@|drop.png|">
   </div>
 </template>
+
+<script>
+  module.exports = {
+    data: {
+      isDrop: false
+    },
+    switchDrop: function () {
+      this.data.isDrop = !this.data.isDrop
+      if (this.data.isDrop) {
+        this.$el.classList.add('drop')
+      } else {
+        this.$el.classList.remove('drop')
+      }
+    }
+  }
+</script>
 
 <style lang="less">
 
@@ -40,5 +59,13 @@ a:hover {
   margin: 0 5px;
   border-left: 2px solid white;
 }
-
+.no-pc {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 17px 10px;
+  width: 28px;
+  transition: transform 0.2s;
+  transform: rotate(0deg);
+}
 </style>

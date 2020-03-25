@@ -33,7 +33,7 @@
         // autoplay: 5000,
         autoplayDisableOnInteraction: false,
         spaceBetween: 25,
-        slidesPerView: 3,
+        slidesPerView: screenInfo.isPc ? 3 : 1,
         slidesPerGroup : 1,
         mousewheelControl: false,
       })
